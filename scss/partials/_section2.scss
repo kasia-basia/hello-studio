@@ -1,7 +1,8 @@
 .about{
   min-height: 870px;
   background: url('../img/about-bg.jpg') no-repeat center;
-
+  position: relative;
+  z-index: -3;
   &__title{
 
   }

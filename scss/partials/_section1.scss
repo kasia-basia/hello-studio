@@ -21,6 +21,47 @@
     line-height: 50px;
   }
 
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+  }
+
+  &__img-wrapper{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+    z-index: -1;
+
+
+    &:before{
+      content: '';
+      border-radius: 50%;
+      border: 10px solid $lightBg;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      top: 15px;
+      left: 0;
+      transform: translate(-50%,-50%);
+      z-index: -2;
+    }
+
+  }
+
+  &__img{
+    margin-top: 0.5em;
+    width: 340px;
+  }
+
+  &__img-title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: gray;
+  }
+
 }
 
 
