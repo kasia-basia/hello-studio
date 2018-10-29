@@ -1,30 +1,108 @@
-.header{
+.hidden{
+  visibility: hidden;
+}
+.header {
   height: 90px;
+
+  &__hamburger {
+    cursor: pointer;
+    margin: 30px;
+    position: absolute;
+    right: 0;
+    z-index: 20;
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .bar1.change {
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .bar2.change {
+      opacity: 0;
+    }
+
+    .bar3.change {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    @media #{$desktop}{
+      visibility: hidden;
+    }
+
+  }
+
+
+
+  &__nav-overlay {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $lightBg;
+    z-index: 10;
+    transition: 0.3s linear;
+  }
+
+  &__nav-overlay.active{
+    height: 100%;
+  }
+
 
   &__nav {
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+
+    @media #{$tablet}{
+      flex-direction: row;
+      visibility: hidden;
+    }
+
+    @media #{$desktop}{
+      flex-direction: row;
+      visibility: visible;
+    }
   }
 
-  &__nav li{
+  &__nav li {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 14px;
-    margin: -25px 10px 10px;
+    margin: 10px;
   }
 
-  &__nav-img{
+  .whitespace {
     height: 80px;
-    display: inline-block;
-    margin: 50px 40px 0px;
-    z-index: 10;
+    width: 230px;
   }
 
+  .logo-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+  }
 
-
-
+  &__nav-img {
+    height: 80px;
+    z-index: 10;
+    position: absolute;
+    transform: translate(0, -60%);
+    margin-top: 95px;
+  }
 
 }

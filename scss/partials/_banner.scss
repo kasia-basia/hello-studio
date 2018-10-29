@@ -6,12 +6,12 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    background-size: contain;
+    background-size: cover;
     background: url('../img/herobanner.jpg') no-repeat center;
   }
 
   &__span {
-    font-size: 60px;
+    font-size: calc(20px + 4vw);
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
     letter-spacing: 2px;
@@ -22,11 +22,10 @@
     &::before {
       content: '';
       position: absolute;
-      height: 40px;
+      height: calc(10px + 3vw);
       width: 110%;
       background-color: white;
       z-index: -1;
-      top: 0;
       left: -5%;
     }
   }

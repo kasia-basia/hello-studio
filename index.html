@@ -14,14 +14,27 @@
 </head>
 <body>
 <div class="header">
+
+    <div class="header__hamburger change">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
     <div class="container">
+        <div class="header__nav-overlay" id='overlay'></div>
+        <div class="logo-wrapper"><img src="img/logo.svg" alt="Hello Studio Logo" class="header__nav-img"></div>
         <ul class="header__nav">
             <li>Offer</li>
             <li>Photos</li>
-            <img src="img/logo.svg" class="header__nav-img alt=" Hello Studio Logo">
+            <li>
+                <div class="whitespace"></div>
+            </li>
             <li>Team</li>
             <li>Contact</li>
         </ul>
+
+
     </div>
 </div>
 
@@ -150,14 +163,14 @@
 <footer>
     <div class="container">
         <div class="footer__icons-wrapper">
-            <img class="footer__icon" src="img/facebook.svg" alt="Facebook icon">
-            <img class="footer__icon" src="img/twitter.svg" alt="Twitter icon">
-            <img class="footer__icon" src="img/pinterest.svg" alt="Pinterest icon">
+            <a href=""><img class="footer__icon" src="img/pinterest.svg" alt="Pinterest icon"></a>
+            <a href=""><img class="footer__icon" src="img/facebook.svg" alt="Facebook"></a>
+            <a href=""><img class="footer__icon" src="img/twitter.svg" alt="Twitter"></a>
         </div>
 
     </div>
 
 </footer>
-
+<script src="app.js" type="text/javascript"></script>
 </body>
 </html>
