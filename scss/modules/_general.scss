@@ -2,6 +2,11 @@
 $tablet: "screen and (min-width: 768px)";
 $desktop: "screen and (min-width: 1025px)";
 
+.no-scroll{
+  overflow: hidden;
+  position: fixed;
+}
+
 *{
   margin: 0;
   padding: 0;
