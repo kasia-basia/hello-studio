@@ -1,0 +1,26 @@
+.offer{
+
+  &__title{
+
+  }
+
+  &__list-title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  &__list{
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+
+  &__list li{
+    border-bottom: 2px solid $lightBg;
+    height: 50px;
+    line-height: 50px;
+  }
+
+}
+
+

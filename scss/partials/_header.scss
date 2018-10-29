@@ -1,0 +1,30 @@
+.header{
+  height: 90px;
+
+  &__nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav li{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: -25px 10px 10px;
+  }
+
+  &__nav-img{
+    height: 80px;
+    display: inline-block;
+    margin: 50px 40px 0px;
+    z-index: 10;
+  }
+
+
+
+
+
+}

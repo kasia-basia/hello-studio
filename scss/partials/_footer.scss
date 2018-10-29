@@ -1,0 +1,16 @@
+footer{
+  min-height: 120px;
+  background: url('../img/footer.jpg') no-repeat center;
+  background-size: cover;
+
+  .footer__icons-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer__icon{
+    height: 45px;
+  }
+
+}

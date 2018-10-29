@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+}
+
+h2{
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+h2:before{
+  content: '';
+  width: 220px;
+  height: 20px;
+  background-color: $lightBg;
+  position: absolute;
+  top: 40%;
+  left: 120%;
+
+}
+
+p{
+  font-size: 14px;
+  line-height: 19px;
+}

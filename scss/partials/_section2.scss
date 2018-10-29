@@ -1,0 +1,17 @@
+.about{
+  min-height: 870px;
+  background: url('../img/about-bg.jpg') no-repeat center;
+
+  &__title{
+
+  }
+
+  &__title:before{
+    background-color: white;
+  }
+
+  p{
+    margin-bottom: 30px;
+  }
+
+}
