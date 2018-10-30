@@ -18,6 +18,12 @@ $desktop: "screen and (min-width: 1025px)";
 
 body{
   font-family: 'Karla', sans-serif;
+  overflow-x: hidden;
+
+  @media #{$tablet} {
+    overflow: auto;
+  }
+
 }
 
 h2{
