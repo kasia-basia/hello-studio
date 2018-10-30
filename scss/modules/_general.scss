@@ -6,6 +6,10 @@ $desktop: "screen and (min-width: 1025px)";
   overflow: hidden;
 }
 
+.hidden{
+  visibility: hidden;
+}
+
 *{
   margin: 0;
   padding: 0;

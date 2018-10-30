@@ -1,42 +1,43 @@
-.offer{
+.offer {
 
-  &__title{
+  &__title {
 
   }
 
-  &__list-title{
+  &__list-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
   }
 
-  &__list{
+  &__list {
     list-style-type: none;
     text-transform: uppercase;
   }
 
-  &__list li{
+  &__list li {
     border-bottom: 2px solid $lightBg;
     height: 50px;
     line-height: 50px;
   }
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     flex-direction: column;
     position: relative;
-
-
   }
 
-  &__img-wrapper{
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 50px;
-    z-index: -1;
+  &__img-wrapper {
+
+    @media #{$tablet}{
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 50px;
+      z-index: -1;
+    }
 
 
-    &:before{
+    &:before {
       content: '';
       border-radius: 50%;
       border: 10px solid $lightBg;
@@ -45,18 +46,24 @@
       position: absolute;
       top: 15px;
       left: 0;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       z-index: -2;
+      visibility: hidden;
+
+      @media #{$tablet}{
+        visibility: visible;
+      }
     }
 
   }
 
-  &__img{
+  &__img {
     margin-top: 0.5em;
     width: 340px;
+    max-width: 100%;
   }
 
-  &__img-title{
+  &__img-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: gray;
